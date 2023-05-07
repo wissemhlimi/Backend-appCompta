@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/cabinet`,
+    require('./cabinetCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/cabinet/:id`,
+    require('./cabinetUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/cabinet/import`,
+    require('./cabinetImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/cabinet`,
+    require('./cabinetDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/cabinet/autocomplete`,
+    require('./cabinetAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/cabinet`,
+    require('./cabinetList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/cabinet/:id`,
+    require('./cabinetFind').default,
+  );
+};

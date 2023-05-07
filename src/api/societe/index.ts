@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/societe`,
+    require('./societeCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/societe/:id`,
+    require('./societeUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/societe/import`,
+    require('./societeImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/societe`,
+    require('./societeDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/societe/autocomplete`,
+    require('./societeAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/societe`,
+    require('./societeList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/societe/:id`,
+    require('./societeFind').default,
+  );
+};

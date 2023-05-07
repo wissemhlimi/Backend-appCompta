@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/achats`,
+    require('./achatsCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/achats/:id`,
+    require('./achatsUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/achats/import`,
+    require('./achatsImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/achats`,
+    require('./achatsDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/achats/autocomplete`,
+    require('./achatsAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/achats`,
+    require('./achatsList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/achats/:id`,
+    require('./achatsFind').default,
+  );
+};

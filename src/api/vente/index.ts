@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/vente`,
+    require('./venteCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/vente/:id`,
+    require('./venteUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/vente/import`,
+    require('./venteImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/vente`,
+    require('./venteDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/vente/autocomplete`,
+    require('./venteAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/vente`,
+    require('./venteList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/vente/:id`,
+    require('./venteFind').default,
+  );
+};

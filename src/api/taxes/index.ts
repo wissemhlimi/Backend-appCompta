@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/taxes`,
+    require('./taxesCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/taxes/:id`,
+    require('./taxesUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/taxes/import`,
+    require('./taxesImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/taxes`,
+    require('./taxesDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/taxes/autocomplete`,
+    require('./taxesAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/taxes`,
+    require('./taxesList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/taxes/:id`,
+    require('./taxesFind').default,
+  );
+};

@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/avoir`,
+    require('./avoirCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/avoir/:id`,
+    require('./avoirUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/avoir/import`,
+    require('./avoirImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/avoir`,
+    require('./avoirDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/avoir/autocomplete`,
+    require('./avoirAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/avoir`,
+    require('./avoirList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/avoir/:id`,
+    require('./avoirFind').default,
+  );
+};
