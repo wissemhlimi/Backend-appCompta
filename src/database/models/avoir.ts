@@ -6,7 +6,7 @@ export default (database) => {
   try {
     return database.model('avoir');
   } catch (error) {
-    // continue, because model doesnt exist
+    // continue, because model doesnt exist 
   }
 
   const AvoirSchema = new Schema(
@@ -28,10 +28,7 @@ export default (database) => {
         type: Number,
         required: true,
       },
-      avoirTVA: [{
-        type: Schema.Types.ObjectId,
-        ref: 'tva',
-      }],
+      
 
       avoirTaxeList: [
         {
@@ -45,6 +42,7 @@ export default (database) => {
 
         },
       ],
+      
       montantTTCAvoir: {
         type: Number,
         required: true,

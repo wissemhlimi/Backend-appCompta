@@ -3,6 +3,9 @@ class Roles {
     return {
       admin: 'admin',
       custom: 'custom',
+      societe: 'societe',
+      cabinet: 'cabinet',
+
     };
   }
 }

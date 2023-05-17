@@ -353,6 +353,9 @@
                       "phoneNumber": {
                         "type": "string"
                       },
+                      "adresseCode": {
+                        "type": "string"
+                      },
                       "avatars": {
                         "type": "array",
                         "items": {
@@ -7137,6 +7140,9 @@
           "phoneNumber": {
             "type": "string"
           },
+          "adresseCode": {
+            "type": "string"
+          },
           "email": {
             "type": "string"
           },
@@ -7195,6 +7201,9 @@
             "type": "string"
           },
           "phoneNumber": {
+            "type": "string"
+          },
+          "adresseCode": {
             "type": "string"
           },
           "email": {

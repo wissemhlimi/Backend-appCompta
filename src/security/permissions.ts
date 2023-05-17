@@ -123,12 +123,12 @@ class Permissions {
       },
       clientImport: {
         id: 'clientImport',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe , roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       clientCreate: {
         id: 'clientCreate',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe , roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.clientPhotoClient,
@@ -136,7 +136,7 @@ class Permissions {
       },
       clientEdit: {
         id: 'clientEdit',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.clientPhotoClient,
@@ -144,7 +144,7 @@ class Permissions {
       },
       clientDestroy: {
         id: 'clientDestroy',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.clientPhotoClient,
@@ -152,23 +152,23 @@ class Permissions {
       },
       clientRead: {
         id: 'clientRead',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       clientAutocomplete: {
         id: 'clientAutocomplete',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
 
       fournisseurImport: {
         id: 'fournisseurImport',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       fournisseurCreate: {
         id: 'fournisseurCreate',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.fournisseurPhotoFournisseur,
@@ -176,7 +176,7 @@ class Permissions {
       },
       fournisseurEdit: {
         id: 'fournisseurEdit',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.fournisseurPhotoFournisseur,
@@ -184,7 +184,7 @@ class Permissions {
       },
       fournisseurDestroy: {
         id: 'fournisseurDestroy',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.fournisseurPhotoFournisseur,
@@ -192,18 +192,18 @@ class Permissions {
       },
       fournisseurRead: {
         id: 'fournisseurRead',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       fournisseurAutocomplete: {
         id: 'fournisseurAutocomplete',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
 
       societeImport: {
         id: 'societeImport',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.admin,],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       societeCreate: {
@@ -232,12 +232,12 @@ class Permissions {
       },
       societeRead: {
         id: 'societeRead',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.admin, roles.cabinet],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       societeAutocomplete: {
         id: 'societeAutocomplete',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.admin, roles.cabinet],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
 
@@ -272,12 +272,12 @@ class Permissions {
       },
       cabinetRead: {
         id: 'cabinetRead',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.admin,],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       cabinetAutocomplete: {
         id: 'cabinetAutocomplete',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.admin,],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
 
@@ -323,12 +323,12 @@ class Permissions {
 
       venteImport: {
         id: 'venteImport',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       venteCreate: {
         id: 'venteCreate',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.venteAttachementVente,
@@ -336,7 +336,7 @@ class Permissions {
       },
       venteEdit: {
         id: 'venteEdit',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.venteAttachementVente,
@@ -344,7 +344,7 @@ class Permissions {
       },
       venteDestroy: {
         id: 'venteDestroy',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.venteAttachementVente,
@@ -352,12 +352,12 @@ class Permissions {
       },
       venteRead: {
         id: 'venteRead',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.cabinet, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       venteAutocomplete: {
         id: 'venteAutocomplete',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
 
@@ -403,12 +403,12 @@ class Permissions {
 
       achatsImport: {
         id: 'achatsImport',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       achatsCreate: {
         id: 'achatsCreate',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.achatsAttachementAchat,
@@ -416,7 +416,7 @@ class Permissions {
       },
       achatsEdit: {
         id: 'achatsEdit',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.achatsAttachementAchat,
@@ -424,7 +424,7 @@ class Permissions {
       },
       achatsDestroy: {
         id: 'achatsDestroy',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.achatsAttachementAchat,
@@ -432,23 +432,23 @@ class Permissions {
       },
       achatsRead: {
         id: 'achatsRead',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.cabinet, roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       achatsAutocomplete: {
         id: 'achatsAutocomplete',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
 
       avoirImport: {
         id: 'avoirImport',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       avoirCreate: {
         id: 'avoirCreate',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.avoirAttachementAvoir,
@@ -456,7 +456,7 @@ class Permissions {
       },
       avoirEdit: {
         id: 'avoirEdit',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.avoirAttachementAvoir,
@@ -464,7 +464,7 @@ class Permissions {
       },
       avoirDestroy: {
         id: 'avoirDestroy',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
           storage.avoirAttachementAvoir,
@@ -472,23 +472,23 @@ class Permissions {
       },
       avoirRead: {
         id: 'avoirRead',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.cabinet, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       avoirAutocomplete: {
         id: 'avoirAutocomplete',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
 
       activityImport: {
         id: 'activityImport',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       activityCreate: {
         id: 'activityCreate',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
 
@@ -496,7 +496,7 @@ class Permissions {
       },
       activityEdit: {
         id: 'activityEdit',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
 
@@ -504,7 +504,7 @@ class Permissions {
       },
       activityDestroy: {
         id: 'activityDestroy',
-        allowedRoles: [roles.admin],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
         allowedStorage: [
 
@@ -512,14 +512,14 @@ class Permissions {
       },
       activityRead: {
         id: 'activityRead',
-        allowedRoles: [roles.admin, roles.custom],
+        allowedRoles: [roles.societe, roles.admin],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
       },
       activityAutocomplete: {
         id: 'activityAutocomplete',
         allowedRoles: [roles.admin, roles.custom],
         allowedPlans: [plans.free, plans.growth, plans.enterprise],
-      },      
+      },
     };
   }
 

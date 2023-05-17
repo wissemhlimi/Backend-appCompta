@@ -16,6 +16,7 @@ export default (database) => {
       firstName: { type: String, maxlength: 80 },
       lastName: { type: String, maxlength: 175 },
       phoneNumber: { type: String, maxlength: 24 },
+      adresseCode: { type: String , maxlength: 255 },
       provider: { type: String, maxlength: 255 },
       providerId: { type: String, maxlength: 255 },
       email: {
